@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form (Week 4)</title>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Form</h1>
+    </header>
+    <main>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <!-- Form text  -->
+          <div>
+            <input
+              type="text"
+              name="username"
+              placeholder="Enter your username"
+            />
+            <input type="email" name="email" placeholder="user@example.com"  />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <br />
+          <div>
+            <textarea name="message" placeholder="Your message"></textarea>
+          </div>
+        </fieldset>
+        <br />
+        <!--  input radio -->
+        <fieldset>
+          <legend>Gender</legend>
+          <label for="male">Male</label>
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="other">Other</label>
+          <input type="radio" name="gender" value="other" id="other" />
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Preferences</legend>
+          <!-- Checkbox -->
+          <div>
+            <p>Choose your favorite programming languages:</p>
+            <label>
+              Python
+              <input type="checkbox" name="languages" value="python" />
+            </label>
+            <label>
+              JavaScript
+              <input type="checkbox" name="languages" value="javascript" />
+            </label>
+            <label>
+              PHP
+              <input type="checkbox" name="languages" value="php" />
+            </label>
+            <label>
+              Java
+              <input type="checkbox" name="languages" value="java" />
+            </label>
+          </div>
+          <br />
+          <!-- Select options -->
+          <div>
+            <label for="year"> Select your year of study: </label>
+            <select name="year" id="year">
+              <option value="1">Year 1</option>
+              <option value="2">Year 2</option>
+              <option value="3">Year 3</option>
+              <option value="4">Year 4</option>
+            </select>
+          </div>
+          <br />
+          <div>
+            <label for="hobbies">Your hobbies</label>
+            <select multiple name="hobbies" id="hobbies">
+              <option value="reading">Reading</option>
+              <option value="gaming">Gaming</option>
+              <option value="going_out">Going Out</option>
+            </select>
+          </div>
+        </fieldset>
+        <br />
+        <!-- Submit button -->
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
