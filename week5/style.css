@@ -1,0 +1,63 @@
+/* reset default */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Header */
+.main-header h1{
+    font-size: 16pt;
+    color: red;
+    padding: 10px;
+}
+
+/* navigation bar */
+.navbar{
+    padding: 10px;
+    background-color: lightgray;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li a{
+    font-size: 12pt;
+    color:darkblue;
+    text-decoration: none;
+}
+
+/* Content */
+#content{
+    padding: 10px;
+    background-color: lightblue;
+    margin-top: 10px;
+}
+#content .content-head{
+    color: darkgray;
+    font-size: 12pt;
+}
+
+#content .description{
+    color: black;
+    font-size: 10pt;
+    margin-top: 10;
+}
+#content div{
+    margin-bottom: 10px;
+}
+.box{
+    margin:10px 5px 20px 0px;
+    padding: 10px;
+    width: 200px;
+    height: 150px;
+    border: 4px solid red;
+    border-radius: 10px 15px 20px 5px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.bg-red{
+    background-color: red;
+}
+.text-highlight{
+    background-color: yellow;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to CSS</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      /* 
+      body {
+        margin: 0px;
+      } */
+      nav {
+        background-color: lightgray;
+        padding: 10px;
+      }
+      /* nested selector */
+      nav ul {
+        list-style-type: none;
+      }
+      nav ul a {
+        color: teal;
+        font-size: 14px;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 style="color: rgb(91, 15, 255); font-size: 16pt; padding: 10px">
+        Introduction to CSS
+      </h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="external-css.html"> External CSS </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
