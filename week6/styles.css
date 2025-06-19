@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 10px;
+    background-color: lightgray;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-1, .p-2{
+    display: inline-block;
+    width: 80px;
+    height: 50px;
+    background: rgb(223, 223, 223);
+}
+
+.highlight{
+    background-color: yellow;
+    padding: 0 5px 0 5px;
+    /* width: 400px;
+    height: 50px; */
+}
+
+
+.section-1{
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    border-bottom: 2px solid blue;
+
+}
+/* Flex box */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
+
+.flex-container > div{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+/* Grid  */
+.grid-container{
+display: grid;
+grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+grid-template-rows: auto;
+gap: 25px;
+}
+
+/* .grid-container > div{
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 10px;
+} */
+
+/* card */
+.card{
+    border-radius: 15px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.card-image > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.card-content{
+    padding: 10px;
+}
+.card-content > h3{
+    margin: 10px 0;
+    font-size: 16pt;
+}
+.card-content > p{
+    color: black;
+    text-align: justify;
+    font-size: 11pt;
+}
+.card-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: end;
+}
+.card-footer > button{
+    background-color: #297dfa;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
