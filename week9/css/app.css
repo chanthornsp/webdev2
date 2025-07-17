@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile First Approach */
+/* Mobile: 0px - 767px (default) */
+body{
+  background-color: purple;
+  color:white;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.grid{
+  display: grid;
+  /* mobile size (default size) */
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+
+}
+.grid .item{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /* Styles for tablet and up */
+  body{
+    background-color: red;
+    font-size: 18px;
+  }
+  .grid{
+    /* overwrite mobile size*/
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+  /* Styles for desktop and up */
+  body{
+    background-color: blue;
+    font-size: 20px;
+  }
+  .grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+/* Large Desktop */
+@media screen and (min-width: 1440px) {
+  /* Styles for large screens */
+  body{
+    background-color: green;
+    font-size: 22px;
+  }
+  .grid{
+    grid-template-columns: repeat(4,1fr);
+  }
+}
