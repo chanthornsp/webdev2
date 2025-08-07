@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>JavaScript</title>
+    <script>
+      function clickMe() {
+        alert("Click from internal head!");
+      }
+    </script>
+  </head>
+  <body class="bg-gray-200">
+    <div class="container mx-auto p-8 flex justify-center flex-col gap-4">
+      <h1 id="my-heading" class="text-xl text-center">JavaScript</h1>
+      <div>
+        <!-- inline javascript -->
+        <button
+          class="bg-blue-500 px-4 py-2 rounded-full cursor-pointer"
+          onclick="alert('Hello, Welcome to JS!')"
+        >
+          Inline JavaScript Alert
+        </button>
+        <!-- internal head -->
+        <button
+          onclick="clickMe()"
+          class="bg-green-500 px-4 py-2 rounded-full cursor-pointer"
+        >
+          Internal Head
+        </button>
+        <button
+          onclick="handleChangeH1Text()"
+          class="bg-teal-500 px-4 py-2 rounded-full cursor-pointer"
+        >
+          Click to Change Text!
+        </button>
+        <button
+          onclick="handleDebugging()"
+          class="bg-purple-500 px-4 py-2 rounded-full cursor-pointer"
+        >
+          Debugging JavaScript
+        </button>
+
+        <button
+          id="my-btn"
+          class="bg-red-500 px-4 py-2 rounded-full cursor-pointer"
+        >
+          My BTN
+        </button>
+      </div>
+    </div>
+
+    <!-- <script>
+      function handleChangeH1Text() {
+        document.getElementById("my-heading").innerText = "Text Changed!";
+        document.getElementById("my-heading").classList.add("text-blue-600");
+        document.getElementById("my-heading").classList.add("font-bold");
+      }
+    </script> -->
+    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
