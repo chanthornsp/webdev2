@@ -33,7 +33,7 @@
   ],
   "rewrites": [
     {
-      "source": "/((?!api/|.*\\.(js|css|svg|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot)).*)",
+      "source": "/((?!api)(?!\\.well-known)(?!.*\\.).*)",
       "destination": "/index.html"
     }
   ]
